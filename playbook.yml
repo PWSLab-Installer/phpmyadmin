@@ -174,14 +174,3 @@
           state: present
         when: os_check.stdout | regex_search("CentOS")
         
-    
-
-#   roles:
-#     - role: geerlingguy.repo-remi
-#       when: ansible_os_family == 'RedHat'
-#     - role: geerlingguy.apache
-#     - role: geerlingguy.mysql
-#     - role: geerlingguy.php-versions
-#     - role: geerlingguy.php
-#     - role: geerlingguy.php-mysql
-#     - role: geerlingguy.phpmyadmin
